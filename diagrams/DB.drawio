@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-19T22:48:58.697Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 YaBrowser/23.7.5.717 Yowser/2.5 Safari/537.36" etag="o5wreUd0iDKL9R0I6B9D" version="22.1.3" type="device">
+<mxfile host="app.diagrams.net" modified="2023-11-23T16:37:47.116Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 YaBrowser/23.7.5.717 Yowser/2.5 Safari/537.36" etag="saHhOz7Q9Nh4swtJ16oP" version="22.1.3" type="device">
   <diagram name="Страница — 1" id="yuq9s7azRZwpZ4uMqqlT">
-    <mxGraphModel dx="2535" dy="1593" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2364" dy="1497" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,26 +13,23 @@
         <mxCell id="_Mj7ivr1F5MViu99svrW-22" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;JobSeeker&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;jobSeekerId INTEGER NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;jobSeekerName TEXT NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;jobSeekerUrl TEXT NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;jobSeekerEmail TEXT NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;jobSeekerPassword TEXT NOT NULL&lt;br&gt;jobSeekerIsAdmin BOOLEAN NOT NULL&lt;br&gt;jobSeekerStatus BOOLEAN NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="430" y="240" width="250" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="_Mj7ivr1F5MViu99svrW-23" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Massages&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;massageId INTEGER NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;massageText TEXT NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;massageTimestamp TIMESTAMPTZ NOT NULL DEFAULT&amp;nbsp;CURRENT_TIMESTAMP&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;employerId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;jobSeekerId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
-          <mxGeometry x="-20" y="240" width="260" height="120" as="geometry" />
+        <mxCell id="_Mj7ivr1F5MViu99svrW-23" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Massages&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;massageId INTEGER NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;massageText TEXT NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;massageTimestamp TIMESTAMPTZ NOT NULL DEFAULT&amp;nbsp;CURRENT_TIMESTAMP&lt;br&gt;senderIsJobSeeker BOOLEAN NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;employerId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;jobSeekerId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+          <mxGeometry x="-20" y="240" width="260" height="128" as="geometry" />
         </mxCell>
-        <mxCell id="_Mj7ivr1F5MViu99svrW-26" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Vacancies&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;vacancyId INTEGER NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;vacancyName TEXT NOT NULL&lt;br&gt;vacancySalaryFrom INTEGER&lt;br&gt;vacancySalaryTo INTEGER&lt;br&gt;vacancySalaryCurrency TEXT&lt;br&gt;vacancyExperience TEXT NOT NULL&lt;br&gt;vacancyDescription TEXT NOT NULL&lt;br&gt;vacancyCreatedAt TIMESTAMPTZ NOT NULL DEFAULT&amp;nbsp;CURRENT_TIMESTAMP&lt;br&gt;vacancyStatus BOOLEAN NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;employerId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;areaId INTEGER NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
-          <mxGeometry x="-500" y="-160" width="260" height="200" as="geometry" />
+        <mxCell id="_Mj7ivr1F5MViu99svrW-26" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Vacancies&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;vacancyId INTEGER NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;vacancyName TEXT NOT NULL&lt;br&gt;vacancySalaryFrom INTEGER&lt;br&gt;vacancySalaryTo INTEGER&lt;br&gt;vacancySalaryCurrency TEXT&lt;br&gt;vacancyExperience TEXT NOT NULL&lt;br&gt;vacancyDescription TEXT NOT NULL&lt;br&gt;vacancyCreatedAt TIMESTAMPTZ NOT NULL DEFAULT&amp;nbsp;CURRENT_TIMESTAMP&lt;br&gt;vacancyStatus BOOLEAN NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;employerId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;areaId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;br&gt;&lt;/td&gt;&lt;td&gt;roleId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+          <mxGeometry x="-500" y="-160" width="260" height="220" as="geometry" />
         </mxCell>
         <mxCell id="_Mj7ivr1F5MViu99svrW-27" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Areas&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;areaId INTEGER NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;areaName TEXT NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="-430" y="90" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="_Mj7ivr1F5MViu99svrW-28" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Resume&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;resumeId INTEGER NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;resumeName TEXT NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;resumeExperience TEXT NOT NULL&lt;br&gt;resumeDescription TEXT NOT NULL&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;resumeCreatedAt TIMESTAMPTZ NOT NULL DEFAULT&amp;nbsp;CURRENT_TIMESTAMP&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;jobSeekerId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;areaId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
-          <mxGeometry x="440" y="-160" width="250" height="150" as="geometry" />
+        <mxCell id="_Mj7ivr1F5MViu99svrW-28" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Resume&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;resumeId INTEGER NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;resumeName TEXT NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;resumeExperience TEXT NOT NULL&lt;br&gt;resumeDescription TEXT NOT NULL&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;resumeCreatedAt TIMESTAMPTZ NOT NULL DEFAULT&amp;nbsp;CURRENT_TIMESTAMP&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;jobSeekerId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;areaId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;br&gt;&lt;/td&gt;&lt;td&gt;roleId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+          <mxGeometry x="440" y="-160" width="250" height="159" as="geometry" />
         </mxCell>
-        <mxCell id="_Mj7ivr1F5MViu99svrW-31" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Response&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;responseId INTEGER NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;responseCreatedAt TIMESTAMPTZ NOT NULL DEFAULT&amp;nbsp;CURRENT_TIMESTAMP&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;resumeId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;vacancyId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
-          <mxGeometry y="110" width="260" height="100" as="geometry" />
+        <mxCell id="_Mj7ivr1F5MViu99svrW-31" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;Response&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;responseId INTEGER NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;responseCreatedAt TIMESTAMPTZ NOT NULL DEFAULT&amp;nbsp;CURRENT_TIMESTAMP&lt;br&gt;statusIsRefusal BOOLEAN&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;resumeId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;vacancyId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+          <mxGeometry y="110" width="260" height="115" as="geometry" />
         </mxCell>
         <mxCell id="_Mj7ivr1F5MViu99svrW-32" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;ProfessionalRoles&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;roleId INTEGER NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;roleName TEXT NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
-          <mxGeometry x="160" y="-160" width="180" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="_Mj7ivr1F5MViu99svrW-34" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;ProfessionalRolesUsers&lt;br&gt;&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;roleUserId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;vacancyId INTEGER&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;roleId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;br&gt;&lt;/td&gt;&lt;td&gt;resumeId INTEGER&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
-          <mxGeometry x="-160" y="-160" width="240" height="100" as="geometry" />
+          <mxGeometry x="-32" y="-160" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_Mj7ivr1F5MViu99svrW-35" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;KeySkills&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;skillId INTEGER NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;skillName TEXT NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="160" y="-20" width="180" height="60" as="geometry" />
@@ -40,13 +37,13 @@
         <mxCell id="_Mj7ivr1F5MViu99svrW-36" value="&lt;div style=&quot;box-sizing: border-box ; width: 100% ; background: #e4e4e4 ; padding: 2px&quot;&gt;KeySkillsUsers&lt;br&gt;&lt;/div&gt;&lt;table style=&quot;width: 100% ; font-size: 1em&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;PK&lt;/td&gt;&lt;td&gt;keySkillUserId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;vacancyId INTEGER&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;/td&gt;&lt;td&gt;skillId INTEGER NOT NULL&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;FK&lt;br&gt;&lt;/td&gt;&lt;td&gt;resumeId INTEGER&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
           <mxGeometry x="-160" y="-20" width="240" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="_Mj7ivr1F5MViu99svrW-38" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERmandOne;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;exitX=0;exitY=0.25;exitDx=0;exitDy=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;entryX=-0.003;entryY=0.848;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="_Mj7ivr1F5MViu99svrW-1" target="_Mj7ivr1F5MViu99svrW-26" edge="1">
+        <mxCell id="_Mj7ivr1F5MViu99svrW-38" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERmandOne;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;exitX=0;exitY=0.25;exitDx=0;exitDy=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;entryX=0.002;entryY=0.775;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="_Mj7ivr1F5MViu99svrW-1" target="_Mj7ivr1F5MViu99svrW-26" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-529.94" y="70" as="sourcePoint" />
             <mxPoint x="-510" y="-130" as="targetPoint" />
             <Array as="points">
               <mxPoint x="-580" y="265" />
-              <mxPoint x="-580" y="10" />
+              <mxPoint x="-580" y="11" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -95,8 +92,10 @@
             <mxPoint x="-491" y="-108" as="sourcePoint" />
             <mxPoint x="260" y="202" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="740" y="-123" />
+              <mxPoint x="740" y="-122" />
               <mxPoint x="740" y="185" />
+              <mxPoint x="739" y="185" />
+              <mxPoint x="739" y="196" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -130,33 +129,26 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="_Mj7ivr1F5MViu99svrW-49" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERmandOne;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;entryX=1.005;entryY=0.602;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" edge="1">
+        <mxCell id="_Mj7ivr1F5MViu99svrW-50" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERmandOne;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="_Mj7ivr1F5MViu99svrW-32" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="158.8" y="-129.37" as="sourcePoint" />
-            <mxPoint x="80.00000000000004" y="-90.66999999999994" as="targetPoint" />
+            <mxPoint x="-57" y="-132" as="sourcePoint" />
+            <mxPoint x="-239" y="51" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="108.8" y="-128.87" />
-              <mxPoint x="108.8" y="-90.86999999999999" />
+              <mxPoint x="-190" y="-130" />
+              <mxPoint x="-190" y="51" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="_Mj7ivr1F5MViu99svrW-50" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERmandOne;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;exitX=1.002;exitY=0.129;exitDx=0;exitDy=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="_Mj7ivr1F5MViu99svrW-26" edge="1">
+        <mxCell id="_Mj7ivr1F5MViu99svrW-51" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERmandOne;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;exitX=0.999;exitY=0.44;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1" source="_Mj7ivr1F5MViu99svrW-32">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-240" y="-250" as="sourcePoint" />
-            <mxPoint x="-160" y="-110" as="targetPoint" />
+            <mxPoint x="190" y="-144" as="sourcePoint" />
+            <mxPoint x="438" y="-9" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="-190" y="-134" />
-              <mxPoint x="-190" y="-110" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="_Mj7ivr1F5MViu99svrW-51" style="edgeStyle=orthogonalEdgeStyle;html=1;dashed=1;labelBackgroundColor=none;startArrow=ERmandOne;endArrow=ERoneToMany;fontFamily=Verdana;fontSize=12;align=left;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;entryX=1.005;entryY=0.602;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="440" y="-130" as="sourcePoint" />
-            <mxPoint x="80.00000000000004" y="-78.76999999999994" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="350" y="-129.5" />
-              <mxPoint x="350" y="-78.5" />
+              <mxPoint x="220" y="-134" />
+              <mxPoint x="373" y="-134" />
+              <mxPoint x="373" y="-129" />
+              <mxPoint x="374" y="-129" />
+              <mxPoint x="374" y="-9" />
             </Array>
           </mxGeometry>
         </mxCell>
